@@ -1,0 +1,48 @@
+Algoritmo "Calculadora Matemática"
+Var
+   num1, num2, resultado: Real
+   operacao: Caractere
+
+Inicio
+   Escreval("----------------------------------------")
+   Escreval(" Bem-vindo(a) à Calculadora Matemática! ")
+   Escreval("----------------------------------------")
+
+   Escreval("Por favor, escolha a operação que deseja realizar:")
+   Escreval("1 - Adição")
+   Escreval("2 - Subtração")
+   Escreval("3 - Multiplicação")
+   Escreval("4 - Divisão")
+   Escreva("Digite o número correspondente à operação desejada:")
+   Leia(operacao)
+
+
+   Escreval("Digite o primeiro número:")
+   Leia(num1)
+   Escreval("Digite o segundo número:")
+   Leia(num2)
+
+
+   Se operacao = ("1") Entao
+      resultado <- num1 + num2
+      Escreva("O resultado da adição é: ", resultado)
+   Senao
+      Se operacao = ("2") Entao
+         resultado <- num1 - num2
+         Escreva("O resultado da subtração é: ", resultado)
+      Senao
+         Se operacao = ("3") Entao
+            resultado <- num1 * num2
+            Escreva("O resultado da multiplicação é: ", resultado)
+         Senao
+            Se operacao = ("4") e (num2 <> 0) Entao
+               resultado <- num1 / num2
+               Escreva("O resultado da divisão é: ", resultado)
+            Senao
+               Escreva("Operação inválida ou divisão por zero!")
+            FimSe
+         FimSe
+      FimSe
+   FimSe
+
+FimAlgoritmo
